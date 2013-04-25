@@ -1,0 +1,1 @@
+class MyMod extends UTGame;
