@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyModDLL", "MyModDLL\MyModDLL.vcxproj", "{4929FBAF-A265-4320-AC35-AFB8A0E7E56B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4929FBAF-A265-4320-AC35-AFB8A0E7E56B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4929FBAF-A265-4320-AC35-AFB8A0E7E56B}.Debug|Win32.Build.0 = Debug|Win32
+		{4929FBAF-A265-4320-AC35-AFB8A0E7E56B}.Release|Win32.ActiveCfg = Release|Win32
+		{4929FBAF-A265-4320-AC35-AFB8A0E7E56B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
