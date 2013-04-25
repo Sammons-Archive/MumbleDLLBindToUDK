@@ -45,3 +45,8 @@ then open command prompt and run "UDK.exe mapname" without the quotes. Note that
 C:\UDK\UDK-2013-02\UDKGame\Content\Maps folder for this to work.
 
 Enjoy!
+  -------------------
+I am not responsible for any harm virtual or physical that may come to property of anyone who uses this. That being I don't think anything bad will happen.
+  -------------------
+If you want to change the behavior of the dll, open the visual studio project in the MyModDLL folder
+  ------
