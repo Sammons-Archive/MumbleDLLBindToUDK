@@ -33,11 +33,11 @@ extern "C" {
 	{
 		
 #ifdef WIN32
-	HANDLE hMapObject = OpenFileMappingW(FILE_MAP_ALL_ACCESS, FALSE, L"MumbleLink");
+	HANDLE hMapObject = OpenFileMappingW(FILE_MAP_ALL_ACCESS, FALSE, L"MumbleLink");//get file mapping to Link's linkedmem struct that it has put out there
 	if (hMapObject == NULL)
 		return;
 
-	lm = (LinkedMem *) MapViewOfFile(hMapObject, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(LinkedMem));
+	lm = (LinkedMem *) MapViewOfFile(hMapObject, FILE_MAP_ALL_ACCESS, 0, 0, sizeof(LinkedMem));//map it and cast it to linked mem, now lm is usable
 	if (lm == NULL) {
 		CloseHandle(hMapObject);
 		hMapObject = NULL;
@@ -63,7 +63,8 @@ extern "C" {
 	}
 
 
-	_declspec(dllexport)void updateLink(float x, float y, float z)
+	_declspec(dllexport)void updateLink(float x, float y, float z)//takes float values straight from unrealscript and updates Link's lm
+		//I have it set up to treat the camera positionally the same as the player, and to not send over rotation of the player
 	{
 			if (! lm)
 		return;

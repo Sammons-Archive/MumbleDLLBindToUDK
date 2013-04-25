@@ -14,7 +14,7 @@ event Activated() {
 		bActivated = True;
 	}
 		`log(pos.X@pos.Y@pos.Z);
-		updateLink(pos.x/10.0f,0.5f,pos.y/10.0f);
+		updateLink(pos.y/10.0f,pos.z/10.0f,pos.x/10.0f);//scaling down distances to be more realistic
 }
 
 defaultproperties
